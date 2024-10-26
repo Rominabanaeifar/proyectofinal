@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Ruta corregida para el CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+
+</head> 
+
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Logo" class="logo"> <!-- Ruta corregida para el logo -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../views/galeria.html">Galería</a></li>
+                <li><a href="../views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta, no dudes en contactarnos utilizando los datos a continuación:</p>
+        <div class="contacto-info">
+            <p><strong>Teléfono:</strong> +34 621 31 66 38</p>
+            <p><strong>Email:</strong> banaeiromina@gmail.com</p>
+            <p><strong>Dirección:</strong> Avenida Reina, Valencia, España</p>
+        </div>
+
+        <h3>Ubicación</h3>
+        <div id="map"></div> <!-- Contenedor para el mapa -->
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><img src="../images/social_icons/facebook.png" alt="Facebook" width="30" height="30"></a>
+            <a href="#"><img src="../images/social_icons/twitter.png" alt="Twitter" width="30" height="30"></a>
+            <a href="#"><img src="../images/social_icons/instagram.png" alt="Instagram" width="30" height="30"></a>
+        </div>
+        
+        <p>&copy; 2024 Instrumentos Odontológicos. Todos los derechos reservados.</p>
+        <p id="direccion-empresa"> Dirección : Avenida Reina, Valencia, España</p>
+    </footer>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> <!-- Script de Leaflet -->
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

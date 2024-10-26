@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rominaodonto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+   
+</head>
+
+<body >
+    <header>
+        <img src="../images/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Galería de Instrumentos</h1>
+
+        <!-- Galería de imágenes dinámicas -->
+        <section id="galeria-dinamica">
+            <h2>Galería de Imágenes</h2>
+            <div class="galeria-container">
+                <img src="../images/instrument1.jpg" alt="Imagen 1" class="galeria-imagen">
+                <img src="../images/instrument2.jpg" alt="Imagen 2" class="galeria-imagen">
+                <img src="../images/instrument3.jpg" alt="Imagen 3" class="galeria-imagen">
+                <img src="../images/producto1.jpg" alt="Imagen 4" class="galeria-imagen">
+                <img src="../images/producto2.jpg" alt="Imagen 5" class="galeria-imagen">
+                <img src="../images/producto3.jpg" alt="Imagen 6" class="galeria-imagen">
+            </div>
+        </section>
+
+        <!-- Formulario para seleccionar productos -->
+        <div id="galeria-container" class="galeria-container">
+            <form id="galeria-form">
+                <label for="producto">Selecciona un producto:</label>
+                <select id="producto" required>
+                    <option value="" disabled selected>Selecciona un producto</option>
+                    <option value="producto1" data-precio="100" data-imagen="../images/instrument1.jpg">Escalador de dientes - $100</option>
+                    <option value="producto2" data-precio="150" data-imagen="../images/instrument2.jpg">Instrumentos de exploración - $150</option>
+                    <option value="producto3" data-precio="200" data-imagen="../images/instrument3.jpg">Fresas odontológicas - $200</option>
+                    
+                </select>
+
+                <p id="total-galeria">Total: $0</p>
+                <button type="submit">Agregar a Presupuesto</button>
+            </form>
+
+            <div id="producto-seleccionado" class="producto-seleccionado" style="display: none; margin-top: 20px;">
+                <img id="imagen-producto" src="../images/logo.png" alt="Producto Seleccionado" style="width: 200px; height: 200px;">
+                <p id="nombre-producto"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><img src="../images/social_icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../images/social_icons/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="../images/social_icons/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Instrumentos Odontológicos. Todos los derechos reservados.</p>
+        <p id="direccion-empresa"> Dirección : Avenida Reina, Valencia, España</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

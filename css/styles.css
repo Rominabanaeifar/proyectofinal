@@ -1,0 +1,262 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #9be890; /*  */
+    display: flex; /*  */
+    flex-direction: column; /*  */
+    min-height: 100vh; /* */
+    background-color: #9be890;
+    
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Un poco más oscuro al pasar el mouse */
+}
+
+   
+#map {
+    height: 400px; /* Altura del mapa */
+    width: 100%; /* Ancho del mapa */
+    max-width: 600px; /* Ancho máximo */
+    margin: auto; /* Centrar el mapa */
+}
+
+
+header {
+    background: #415e3e; /* */
+    color: white; /* */
+    padding: 20px 0;
+    text-align: center; /* */
+    display: flex;
+    flex-direction: column; /* */
+    align-items: center; /*  */
+}
+nav {
+    position: fixed; /* Mantener la barra de navegación fija */
+    top: 0; /* Posicionar en la parte superior */
+    width: 100%; /* Ancho completo */
+    background-color: #415e3e; /* Color de fondo */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar el texto en la barra */
+}
+nav ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar padding */
+}
+
+nav ul li {
+    display: inline; /* Mostrar en línea */
+    margin-right: 20px; /* Espaciado entre elementos */
+}
+
+nav ul li a {
+    text-decoration: none; /* Sin subrayado */
+    color: #000; /* Color del texto */
+    padding: 5px 10px; /* Espaciado alrededor del texto */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+nav ul li a.active {
+    background-color: #007BFF; /* Color de fondo para el elemento activo */
+    color: white; /* Color del texto para el elemento activo */
+    font-weight: bold; /* Hacer el texto más destacado */
+}
+
+
+main {
+    padding: 20px;
+    flex: 1; /*  */
+}
+
+/* Estilos del footer */
+footer {
+    position: relative; /*  */
+    background-color: #415e3e; /*  */
+    color: rgb(255, 255, 255); /* */
+    padding: 20px; /*  */
+    text-align: center; /* */
+    margin-top: auto; /*  */
+}
+.footer-container {
+    max-width: 1200px; /*  */
+    margin: 0 auto; /*  */
+}
+
+
+.logo {
+    opacity: 0; /*  */
+    transition: opacity 1s ease;
+     /*  */
+}
+
+/* Clase para hacer que el logo aparezca */
+.logo-visible {
+    opacity: 1; /*  */
+}
+.logo-container {
+    display: flex; /* */
+    justify-content: center; /*  */
+    align-items: center; /*  */
+}
+
+
+
+
+
+/* Estilos para la galería */
+/* Otras reglas de CSS que ya tienes... */
+
+/* Estilo para el contenedor de la galería */
+
+/* Efecto hover para imágenes */
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 10px; /* Espaciado entre las imágenes */
+    margin: 20px auto; /* Centrar el contenedor de la galería */
+    max-width: 900px; /* Ancho máximo para la galería */
+}
+
+.galeria-imagen {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 250px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    border-radius: 10px; /* Esquinas redondeadas */
+    border: 1px solid #ccc; /* Borde gris alrededor de las imágenes */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+.galeria-imagen:hover {
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1000; /* Por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    justify-content: center; /* Centrar contenido */
+    align-items: center; /* Centrar contenido verticalmente */
+}
+
+.modal img {
+    max-width: 100%; /* Ancho máximo del 90% */
+    max-height: 100%; /* Alto máximo del 90% */
+}
+
+.close {
+    position: absolute; /* Posición absoluta para el botón de cerrar */
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Efecto hover para imágenes */
+.galeria-imagen:hover {
+    transform: scale(1.05);
+    z-index: 10; /* Agrandar la imagen al pasar el mouse */
+}
+
+
+
+.redes-sociales {
+    display: flex; /*  */
+    justify-content: center; /*  */
+}
+
+.redes-sociales img {
+    width: 30px; /*  */
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.1); /* */
+}
+
+/* Estilo para las secciones de noticias */
+.noticia-titulo {
+    cursor: pointer;
+    color: #007BFF; /* Color azul para los títulos */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.noticia-contenido {
+    display: none; /* Inicialmente ocultamos el contenido */
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    border: 1px solid #ccc; /* Bordes sutiles */
+    border-radius: 5px; /* Bordes redondeados */
+}
+a {
+    color: blue; /* Cambia el color del enlace */
+    text-decoration: underline; /* Subraya el enlace */
+}
+
+a:hover {
+    color: darkblue; /* Cambia el color cuando el mouse está sobre el enlace */
+}
+.highlight {
+    font-weight: bold; /* Hacer el texto en negrita */
+    color: yellow;     /* Cambiar el color del texto a amarillo */
+}
+/* Estilos para las noticias */
+.noticia {
+    background-color: #b9f0a7; /* Fondo gris claro */
+    border: 1px solid #ddd;    /* Bordes suaves */
+    border-radius: 5px;        /* Bordes redondeados */
+    margin: 10px 0;            /* Espaciado entre noticias */
+    padding: 15px;             /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.noticia h3 {
+    color: #333;               /* Color del título de la noticia */
+    margin-top: 0;            /* Eliminar margen superior */
+}
+
+.noticia p {
+    color: #555;               /* Color del texto del contenido */
+}
+
